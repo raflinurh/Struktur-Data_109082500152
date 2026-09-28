@@ -1,6 +1,10 @@
-# **Laporan Praktikum Modul 1 \- Codeblocks IDE & Pengenalan Bahas C++ (Bagian Pertama)**
+<div align="center">
+
+# **Laporan Praktikum Modul 1 - Codeblocks IDE & Pengenalan Bahasa C++ (Bagian Pertama)**
 
 Rafli Nurhidayat - 109082500152
+
+</div>
 
 ## Dasar Teori
 
@@ -122,7 +126,7 @@ int main() {
 ### Output Unguided 1
 ![Screenshot Output Unguided 1_1](https://github.com/raflinurh/Struktur-Data_109082500152/blob/main/modul1/output/1.png)
 
-Program melakukan validasi pembagian dengan nol agar tidak terjadi kesalahan saat runtime.
+Pada percobaan ini digunakan bilangan pertama `12` dan bilangan kedua `4`. Program menghitung empat operasi aritmatika menggunakan operator `+`, `-`, `*`, dan `/`. Hasil penjumlahan `12 + 4` adalah `16`, pengurangan `12 - 4` adalah `8`, perkalian `12 * 4` adalah `48`, sedangkan pembagian `12 / 4` menghasilkan `3`. Format `fixed` dan `setprecision(2)` membuat hasil bilangan desimal ditampilkan dengan dua angka di belakang koma. Program juga memeriksa nilai bilangan kedua sebelum melakukan pembagian agar pembagian dengan nol tidak terjadi.
 
 ### 2. Mengubah Angka Menjadi Tulisan
 
@@ -165,12 +169,11 @@ int main() {
 ### Output Unguided 2
 ![Screenshot Output Unguided 1_2](https://github.com/raflinurh/Struktur-Data_109082500152/blob/main/modul1/output/2.png)
 
-
-Program menggunakan array kata dasar dan percabangan untuk menangani satuan, belasan, puluhan, serta angka 100.
+Pada percobaan ini input yang diberikan adalah `25`. Fungsi `angkaKeTulisan()` terlebih dahulu memeriksa rentang nilai menggunakan percabangan `if`. Karena `25` berada pada rentang 20 sampai 99, angka tersebut dipisahkan menjadi puluhan `2` dan satuan `5`. Nilai tersebut kemudian digabungkan dengan kata dasar pada array `satuan`, sehingga menghasilkan teks `dua puluh lima`. Percabangan khusus juga digunakan untuk menangani angka 0 sampai 19 dan angka 100.
 
 ### 3. Program Pola Mirror
 
-Buat program yang menerima input bilangan bulat, kemudian menampilkan pola angka mirror. Untuk input `3`, pola yang dihasilkan adalah angka yang menurun menuju `1`, lalu kembali naik pada setiap baris.
+Buat program yang menerima input bilangan bulat, kemudian menampilkan pola angka mirror. Pada screenshot digunakan input `5`, sehingga pola yang dihasilkan menurun menuju `1`, lalu kembali naik pada setiap baris.
 
 ```cpp
 #include <iostream>
@@ -207,8 +210,7 @@ int main() {
 ### Output Unguided 3
 ![Screenshot Output Unguided 1_3](https://github.com/raflinurh/Struktur-Data_109082500152/blob/main/modul1/output/3.png)
 
-
-Perulangan luar menentukan jumlah baris. Pada setiap baris, angka dicetak menurun menuju `1`, kemudian tanda `*` sebagai sumbu mirror, lalu angka dicetak menaik. Setelah semua baris selesai, program mencetak satu tanda `*` di bagian bawah.
+Pada percobaan ini input yang digunakan adalah `5`, sehingga program menghasilkan enam baris output. Perulangan luar mengatur baris dari `5` sampai `1`. Pada baris pertama, angka dicetak dari `5` sampai `1`, kemudian tanda `*`, lalu angka `1` sampai `5`. Pada baris berikutnya, jumlah angka berkurang satu dan jumlah spasi di awal baris bertambah sehingga pola semakin mengerucut ke tengah. Setelah baris `1 * 1`, program mencetak satu `*` pada posisi paling bawah sebagai ujung pola. Dengan demikian, output membentuk pola mirror yang simetris terhadap tanda `*` di tengah.
 
 ## Kesimpulan
 
